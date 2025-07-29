@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enhanced HTML5 Page</title>
+</head>
+<body>
+
+  <header>
+    <h1>HTML5 Showcase</h1>
+    <p>Exploring lists, tables, media, and form elements</p>
+  </header>
+
+  <main>
+
+    <!-- ✅ Section 1: Lists, Tables, and Media -->
+    <section>
+      <h2>Favorite Technologies</h2>
+
+      <h3>🌐 Programming Languages (List)</h3>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+      </ul>
+
+      <h3>📊 Comparison Table</h3>
+      <table border="1">
+        <thead>
+          <tr>
+            <th>Language</th>
+            <th>Use Case</th>
+            <th>Difficulty</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>HTML</td>
+            <td>Structure</td>
+            <td>Easy</td>
+          </tr>
+          <tr>
+            <td>CSS</td>
+            <td>Styling</td>
+            <td>Medium</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>📷 Media Content</h3>
+      <img src="coding.jpg" alt="A laptop with code on screen" width="300">
+      <audio controls>
+        <source src="theme.mp3" type="audio/mpeg">
+        Your browser doesn't support audio playback.
+      </audio>
+      <video width="320" height="240" controls>
+        <source src="demo.mp4" type="video/mp4">
+        Your browser doesn't support video playback.
+      </video>
+    </section>
+
+    <!-- ✅ Section 2: HTML5 Form with Validation -->
+    <section>
+      <h2>Sign Up Form</h2>
+      <form action="#" method="post">
+
+        <fieldset>
+          <legend>🔐 Account Info</legend>
+
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username"
+                 required minlength="5" maxlength="15"
+                 placeholder="Enter username" autocomplete="username">
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email"
+                 required placeholder="e.g., user@example.com">
+
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password"
+                 required pattern=".{8,}" placeholder="Min 8 characters">
+
+        </fieldset>
+
+        <fieldset>
+          <legend>👤 Personal Info</legend>
+
+          <label for="fullname">Full Name:</label>
+          <input type="text" id="fullname" name="fullname" readonly value="Christopher">
+
+          <label for="age">Age:</label>
+          <input type="number" id="age" name="age" min="18" max="99" required>
+
+          <label for="gender">Gender:</label>
+          <select id="gender" name="gender" required>
+            <option value="">--Select--</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+          </select>
+
+        </fieldset>
+
+        <input type="submit" value="Register">
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Your Name. Built with HTML5 💻</p>
+  </footer>
+
+</body>
+</html>
